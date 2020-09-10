@@ -12,22 +12,22 @@ namespace EFCoreConsApp
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Add a new question...");
+            //Console.WriteLine("Add a new question...");
             //using (var db = new EFContext())
             //{
             //    db.Questions.Add(
             //        new Question
             //        {
-            //            QuestionId = 2,
-            //            QuestionText = "Koliko je presjecnih elipticnih povrsina u znaku Olimpijskih igara?",
+            //            QuestionId = 3,
+            //            QuestionText = "Ako je prvi januar srijeda, koji dan ce biti Bozic u januaru iste te godine?",
             //            MultiAnswer = false,
             //            SoftDeleted = false,
-            //            Explanation = new Explanation { ExplanationId = 2, ExplanationText = string.Empty },
+            //            Explanation = new Explanation { ExplanationId = 3, ExplanationText = "Bozic je 7 mi dan u mjesecu. Sledeca srijeda je 8 mi dan u mjesecu" },
             //            Answers = new List<Answer>()
             //            {
-            //                new Answer{AnswerId=4,Order=1,AnswerText="3",IsCorrect=false},
-            //                new Answer{AnswerId =5,Order=2,AnswerText="4", IsCorrect=true},
-            //                new Answer{AnswerId=6,Order=3,AnswerText="2",IsCorrect=false}
+            //                new Answer{AnswerId=7,Order=1,AnswerText="Utorak",IsCorrect=true},
+            //                new Answer{AnswerId =8,Order=2,AnswerText="Srijeda", IsCorrect=false},
+            //                new Answer{AnswerId=9,Order=3,AnswerText="Ponedeljak",IsCorrect=false}
             //            }
             //        });
 
@@ -92,6 +92,31 @@ namespace EFCoreConsApp
                     db.Questions.Update(questionToChangeAnswer);
                     db.SaveChanges();
                     Console.WriteLine("Data updated and saved ...");
+                }
+                catch(Exception exc)
+                {
+                    Console.WriteLine($"Exception Message: {exc.Message}");
+                    Console.WriteLine($"Inner Exception Message: {exc.InnerException.Message}");
+                }
+            }
+
+            Console.WriteLine("Hide question with SoftDelete method instead of removing ...");
+
+            using(var db = new EFContext())
+            {
+                var questionToHide = db.Questions
+                    .Include(a => a.Answers)
+                    .Include(e => e.Explanation)
+                    .Where(q => q.QuestionId == 2)
+                    .First();
+
+                questionToHide.SoftDeleted = true;
+
+                try
+                {
+                    db.Update(questionToHide);
+                    db.SaveChanges();
+                    Console.WriteLine("Data updated to be hidden and saved ...");
                 }
                 catch(Exception exc)
                 {

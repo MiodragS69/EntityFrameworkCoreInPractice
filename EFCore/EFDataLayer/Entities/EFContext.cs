@@ -17,13 +17,15 @@ namespace EFDataLayer.Entities
         public DbSet<Explanation> Explanations { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlServer(ConnectionStringHelper.HardCodedConnectionString());
+            optionsBuilder.UseSqlServer(ConnectionStringHelper.AppJsonConfigConnectionString());
         }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Question>()
                 .HasQueryFilter(f => f.SoftDeleted == false);
+            modelBuilder.Entity<Answer>()
+                .HasKey(k => new { k.AnswerId, k.QuestionId });
         }
         
     }

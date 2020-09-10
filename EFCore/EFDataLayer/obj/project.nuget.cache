@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "NWPMenldYE2dESLaULa6z5OWVoykNalQr/BdTVEtMiryp7BzqVIyUrQxDligLVStL6aqsestMWPcY+igudzGxg==",
+  "dgSpecHash": "jzYLSFejFW9drD4XOBoox3zj68oZ3+3aVz44HCFZztS1uuDB6KGlFdqDOWjOMUDOvvPeIJZzpqMntZbHdqRq1A==",
   "success": true,
   "projectFilePath": "C:\\git\\EntityFrameworkCoreInPractice\\EFCore\\EFDataLayer\\EFDataLayer.csproj",
   "expectedPackageFiles": [
@@ -20,8 +20,13 @@
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.8\\microsoft.extensions.configuration.3.1.8.nupkg.sha512",
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\3.1.8\\microsoft.extensions.configuration.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.configuration.binder\\3.1.8\\microsoft.extensions.configuration.binder.3.1.8.nupkg.sha512",
+    "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\3.1.8\\microsoft.extensions.configuration.fileextensions.3.1.8.nupkg.sha512",
+    "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.configuration.json\\3.1.8\\microsoft.extensions.configuration.json.3.1.8.nupkg.sha512",
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.dependencyinjection\\3.1.8\\microsoft.extensions.dependencyinjection.3.1.8.nupkg.sha512",
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\3.1.8\\microsoft.extensions.dependencyinjection.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.fileproviders.abstractions\\3.1.8\\microsoft.extensions.fileproviders.abstractions.3.1.8.nupkg.sha512",
+    "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.fileproviders.physical\\3.1.8\\microsoft.extensions.fileproviders.physical.3.1.8.nupkg.sha512",
+    "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\3.1.8\\microsoft.extensions.filesystemglobbing.3.1.8.nupkg.sha512",
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.logging\\3.1.8\\microsoft.extensions.logging.3.1.8.nupkg.sha512",
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\3.1.8\\microsoft.extensions.logging.abstractions.3.1.8.nupkg.sha512",
     "C:\\Users\\miodrag.sabljic\\.nuget\\packages\\microsoft.extensions.options\\3.1.8\\microsoft.extensions.options.3.1.8.nupkg.sha512",

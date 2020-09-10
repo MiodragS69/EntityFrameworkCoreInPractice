@@ -1,0 +1,9 @@
+{
+  "ConnectionParameters": {
+    "DataSource": ".",
+    "InitialCatalog": "EFCorePractice",
+    "UserId": "sa",
+    "Password": "sa"
+  }
+  
+}

@@ -29,7 +29,16 @@ namespace EFDataLayer.Helpers
 
         public static string AppJsonConfigConnectionString()
         {
-            return string.Empty;
+            var root = ConfigHelper.GetConfiguration();
+            var connectionSection = root.GetSection("ConnectionParameters");
+
+            SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+            builder.DataSource = connectionSection["DataSource"];
+            builder.InitialCatalog = connectionSection["InitialCatalog"];
+            builder.UserID = connectionSection["UserId"];
+            builder.Password = connectionSection["Password"];
+
+            return builder.ConnectionString;
         }
     }
 }

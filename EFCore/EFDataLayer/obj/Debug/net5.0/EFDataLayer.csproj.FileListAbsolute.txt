@@ -11,3 +11,4 @@ C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataL
 C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.dll
 C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.pdb
 C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.genruntimeconfig.cache
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\bin\Debug\net5.0\config.json
