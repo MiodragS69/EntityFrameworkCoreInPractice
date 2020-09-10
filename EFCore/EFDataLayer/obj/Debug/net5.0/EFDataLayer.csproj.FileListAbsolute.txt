@@ -1,0 +1,13 @@
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\bin\Debug\net5.0\EFDataLayer.deps.json
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\bin\Debug\net5.0\EFDataLayer.runtimeconfig.json
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\bin\Debug\net5.0\EFDataLayer.runtimeconfig.dev.json
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\bin\Debug\net5.0\EFDataLayer.dll
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\bin\Debug\net5.0\EFDataLayer.pdb
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.csprojAssemblyReference.cache
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.AssemblyInfoInputs.cache
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.AssemblyInfo.cs
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.csproj.CoreCompileInputs.cache
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.dll
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.pdb
+C:\git\EntityFrameworkCoreInPractice\EFCore\EFDataLayer\obj\Debug\net5.0\EFDataLayer.genruntimeconfig.cache
