@@ -18,5 +18,7 @@ namespace EFDataLayer.Entities
         public bool MultiAnswer { get; set; }
         public ICollection<Answer> Answers { get; set; }
         public Explanation Explanation { get; set; }
+        public QuestionScope Scope { get; set; }
+        public QuestionRating Rating { get; set; }
     }
 }

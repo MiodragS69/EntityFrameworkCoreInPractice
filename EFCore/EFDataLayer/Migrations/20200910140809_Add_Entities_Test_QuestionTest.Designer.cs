@@ -4,14 +4,16 @@ using EFDataLayer.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace EFDataLayer.Migrations
 {
     [DbContext(typeof(EFContext))]
-    partial class EFContextModelSnapshot : ModelSnapshot
+    [Migration("20200910140809_Add_Entities_Test_QuestionTest")]
+    partial class Add_Entities_Test_QuestionTest
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

@@ -15,6 +15,8 @@ namespace EFDataLayer.Entities
         public DbSet<Question> Questions { get; set; }
         public DbSet<Answer> Answers { get; set; }
         public DbSet<Explanation> Explanations { get; set; }
+        public DbSet<Test> Tests { get; set; }
+        public DbSet<QuestionTest> QuestionsTests { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             optionsBuilder.UseSqlServer(ConnectionStringHelper.AppJsonConfigConnectionString());
@@ -26,6 +28,10 @@ namespace EFDataLayer.Entities
                 .HasQueryFilter(f => f.SoftDeleted == false);
             modelBuilder.Entity<Answer>()
                 .HasKey(k => new { k.AnswerId, k.QuestionId });
+            modelBuilder.Entity<QuestionTest>()
+                .HasKey(k => new { k.QuestionId, k.TestId });
+            modelBuilder.Entity<QuestionTest>()
+                .HasQueryFilter(f => f.SoftDeleted == false);
         }
         
     }
