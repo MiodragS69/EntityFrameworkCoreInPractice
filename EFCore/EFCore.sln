@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30428.66
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFCoreConsApp", "EFCoreConsApp\EFCoreConsApp.csproj", "{E97B9803-80C2-48D3-983F-BC1DE7CEDF3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFCoreConsApp", "EFCoreConsApp\EFCoreConsApp.csproj", "{E97B9803-80C2-48D3-983F-BC1DE7CEDF3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EFDataLayer", "EFDataLayer\EFDataLayer.csproj", "{B60FC382-D643-4BC2-826C-C06B6BAF5A39}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EFDataLayer", "EFDataLayer\EFDataLayer.csproj", "{B60FC382-D643-4BC2-826C-C06B6BAF5A39}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

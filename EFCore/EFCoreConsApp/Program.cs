@@ -44,9 +44,10 @@ namespace EFCoreConsApp
             //    }
 
             //}
+                       
 
             Console.WriteLine("Update question ... add explanation to question");
-            using(var db = new EFContext())
+            using (var db = new EFContext())
             {
                 var questionToUpdate = db.Questions
                     .Include(a => a.Answers)
@@ -62,7 +63,7 @@ namespace EFCoreConsApp
                     db.SaveChanges();
                     Console.WriteLine("Data updated and saved");
                 }
-                catch(Exception exc)
+                catch (Exception exc)
                 {
                     Console.WriteLine($"Exception Message: {exc.Message}");
                     Console.WriteLine($"Inner Exception Message: {exc.InnerException.Message}");
@@ -110,7 +111,7 @@ namespace EFCoreConsApp
                     .Where(q => q.QuestionId == 2)
                     .First();
 
-                questionToHide.SoftDeleted = true;
+                questionToHide.SoftDeleted = false;
 
                 try
                 {
@@ -125,6 +126,41 @@ namespace EFCoreConsApp
                 }
             }
 
+            Console.WriteLine("Update enums in exsting questions...");
+            System.Threading.Thread.Sleep(500);
+            using(var db = new EFContext())
+            {
+                var questionToUpdateScope = db.Questions
+                    .Include(a => a.Answers)
+                    .Include(e => e.Explanation)
+                    .Where(q => q.QuestionId == 1)
+                    .First();
+
+                questionToUpdateScope.Scope = QuestionScope.Math;
+                questionToUpdateScope.Rating = QuestionRating.Medium;
+                db.SaveChanges();
+
+                questionToUpdateScope = db.Questions
+                    .Include(a => a.Answers)
+                    .Include(e => e.Explanation)
+                    .Where(q => q.QuestionId == 2)
+                    .First();
+
+                questionToUpdateScope.Scope = QuestionScope.Sport;
+                questionToUpdateScope.Rating = QuestionRating.Medium;
+                db.SaveChanges();
+
+                questionToUpdateScope = db.Questions
+                    .Include(a => a.Answers)
+                    .Include(e => e.Explanation)
+                    .Where(q => q.QuestionId == 3)
+                    .First();
+
+                questionToUpdateScope.Scope = QuestionScope.NoScope;
+                questionToUpdateScope.Rating = QuestionRating.Simple;
+                db.SaveChanges();
+            }
+            Console.WriteLine("Question scopes updated ...");
 
             Console.WriteLine("Display data ...");
             System.Threading.Thread.Sleep(1000);
@@ -138,7 +174,9 @@ namespace EFCoreConsApp
                     {
                         QuestionText = p.QuestionText,
                         QuestionAnswers = p.Answers,
-                        QuestionExplanation = p.Explanation.ExplanationText
+                        QuestionExplanation = p.Explanation.ExplanationText,
+                        QuestionRating = ((QuestionRatingEnum)p.Rating).ToString(),
+                        QuestionScope = ((QuestionScopeEnum)p.Scope).ToString()
                     }).ToList();
 
                 var count = questions.Count();
@@ -153,7 +191,10 @@ namespace EFCoreConsApp
                         Console.WriteLine($"Answer: {answer.AnswerText} Correct: {isAnswerCorrect}");
                     }
                     Console.WriteLine("=======================================");
+                    Console.WriteLine($"Scope: {question.QuestionScope}");
+                    Console.WriteLine($"Rating: {question.QuestionRating}");
                     Console.WriteLine($"Explanation: {question.QuestionExplanation}");
+                    
                 }
             }
 

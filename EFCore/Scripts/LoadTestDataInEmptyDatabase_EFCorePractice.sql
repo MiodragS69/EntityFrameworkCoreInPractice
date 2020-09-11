@@ -30,11 +30,11 @@ INSERT [dbo].[Explanations] ([ExplanationId], [ExplanationText], [QuestionId]) V
 GO
 INSERT [dbo].[Explanations] ([ExplanationId], [ExplanationText], [QuestionId]) VALUES (3, N'Bozic je 7 mi dan u mjesecu. Sledeca srijeda je 8 mi dan u mjesecu', 3)
 GO
-INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910091225_InitialMigration', N'3.1.8')
-GO
-INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910132010_AddCompositePrimaryKey_TableAnswers', N'3.1.8')
-GO
-INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910140426_Add_EnumsForQuestionScopeAndQuestionRating_Entities_Test_QuestionTest', N'3.1.8')
-GO
-INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910140809_Add_Entities_Test_QuestionTest', N'3.1.8')
-GO
+--INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910091225_InitialMigration', N'3.1.8')
+--GO
+--INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910132010_AddCompositePrimaryKey_TableAnswers', N'3.1.8')
+--GO
+--INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910140426_Add_EnumsForQuestionScopeAndQuestionRating_Entities_Test_QuestionTest', N'3.1.8')
+--GO
+--INSERT [dbo].[__EFMigrationsHistory] ([MigrationId], [ProductVersion]) VALUES (N'20200910140809_Add_Entities_Test_QuestionTest', N'3.1.8')
+--GO
